@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="GroupDBModelStoreContainer" CdmEntityContainer="GroupDBEntities2">
+    <EntitySetMapping Name="Groups">
+      <EntityTypeMapping TypeName="GroupDBModel.Group">
+        <MappingFragment StoreEntitySet="Group">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="gname" ColumnName="gname" />
+          <ScalarProperty Name="gsal" ColumnName="gsal" />
+          <ScalarProperty Name="gcity" ColumnName="gcity" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

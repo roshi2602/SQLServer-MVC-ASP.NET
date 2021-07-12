@@ -1,0 +1,50 @@
+﻿@model IEnumerable<EFinMVC.Models.Group>
+
+<!--
+ Implementing IEnumerable makes using foreach possible.
+    //Implementing IEnumerator means your class returns the methods and properties for iteration
+
+    DisplayNameFor() :- It shows the name of the property
+    DisplayFor() :- It is used for displaying model items or database items in the browser.
+-->
+@{ 
+    ViewBag.title = "group";
+}
+
+<table>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Id);
+         
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.gname);
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.gcity);
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.gsal);
+        </th>
+    </tr>
+
+
+ @foreach (var i in Model)
+
+ {
+<tr>
+    <td>
+        @Html.DisplayFor(modelItem => i.Id);
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => i.gname);
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => i.gcity);
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => i.gsal);
+    </td>
+</tr>
+ }
+</table>

@@ -1,0 +1,16 @@
+﻿@model IEnumerable<EFinMVC.Models.Group>
+@using EFinMVC.Models
+
+@{
+    ViewBag.title = "group list";
+}
+
+<h2>group list</h2>
+@foreach (Group i in Model)
+{
+    //generating hyper links
+    <li>@Html.ActionLink(i.gname,"GetActionLink", new { myid = i.Id })</li>     //ew { myid = i.Id } is for using ID in url
+    /*Razor Syntax C#:
+    @Html.ActionLink("poperty", "controller method", new { Id = 3 })
+    */
+}

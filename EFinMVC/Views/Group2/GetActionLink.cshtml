@@ -1,0 +1,28 @@
+﻿@using EFinMVC.Models
+
+@model EFinMVC.Models.Group
+
+@{
+    ViewBag.title = "group detail";
+}
+
+<p>
+            @Html.DisplayNameFor(model => model.gname);  <!--for property name-->
+
+            @Html.DisplayFor(model => model.gname);  <!--for model data of gname-->
+      </p>
+      <p>
+            @Html.DisplayNameFor(model => model.gcity);
+            @Html.DisplayFor(model => model.gcity);
+        </p>
+<p>
+            @Html.DisplayNameFor(model => model.gsal);
+            @Html.DisplayFor(model => model.gsal);
+</p>
+<h5>
+   <a href="/Group2/Index2">back to index</a>
+</h5>
+    
+       
+      
+       
